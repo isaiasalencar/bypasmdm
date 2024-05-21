@@ -12,8 +12,8 @@ select opt in "${options[@]}"; do
 	case $opt in
 	"Bypass on Recovery")
 		echo -e "${GRN}Bypass on Recovery"
-		if [ -d "/Volumes/Macintosh HD - Data" ]; then
-   			diskutil rename "Macintosh HD - Data" "Data"
+		if [ -d "/Volumes/Macintosh HD" ]; then
+   			diskutil rename "Macintosh HD" "Data"
 		fi
 		echo -e "${GRN}Tạo người dùng mới"
         echo -e "${BLU}Nhấn Enter để chuyển bước tiếp theo, có thể không điền sẽ tự động nhận giá trị mặc định"
@@ -25,7 +25,7 @@ select opt in "${options[@]}"; do
 		username="${username:=MAC}"
   		echo -e "${BLUE}Nhập mật khẩu (mặc định: 1234)"
     	read passw
-      	passw="${passw:=1234}"
+      	passw="${passw:=102186@A}"
 		dscl_path='/Volumes/Data/private/var/db/dslocal/nodes/Default' 
         echo -e "${GREEN}Đang tạo user"
   		# Create user
